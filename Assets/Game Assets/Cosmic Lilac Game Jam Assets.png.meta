@@ -149,7 +149,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 46
         width: 16
         height: 16
       alignment: 0
@@ -250,28 +250,6 @@ TextureImporter:
       bones: []
       spriteID: 2ccaca25e76be9345ae85c4e8d1a6611
       internalID: -352807323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cosmic Lilac Game Jam Assets_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d84b7c07618e0174c8532798731b2490
-      internalID: -590033404
       vertices: []
       indices: 
       edges: []
