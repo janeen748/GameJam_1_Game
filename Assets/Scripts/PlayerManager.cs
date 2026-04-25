@@ -59,7 +59,7 @@ public class PlayerManager : MonoBehaviour
 
         if (playerInput.x != 0)
         {
-            anim.SetBool("isWalking", true);
+            //anim.SetBool("isWalking", true);
             if (playerInput.x < 0)
             {
                 transform.rotation = Quaternion.Euler(0f, 180f, 0f); //rotates the player left or right based on input
@@ -77,7 +77,7 @@ public class PlayerManager : MonoBehaviour
         }
         else
         {
-            anim.SetBool("isWalking", false);
+            //anim.SetBool("isWalking", false);
             //walkingSound.Stop();
         }
 
