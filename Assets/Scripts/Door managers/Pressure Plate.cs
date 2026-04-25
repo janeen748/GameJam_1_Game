@@ -5,6 +5,7 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     public GameObject door;
+    public GameObject door2;
     public float pressDepth = 0.1f;
     private Vector3 startPos;
     private int objectsOnTop = 0;
@@ -54,12 +55,14 @@ public class PressurePlate : MonoBehaviour
 
             
             door.GetComponent<Animator>().SetBool("DoorPressed", true);
+            door2.GetComponent<Animator>().SetBool("DoorPressed", true);
         }
         else
         {
             transform.position = startPos;
             
             door.GetComponent<Animator>().SetBool("DoorPressed", false);
+            door2.GetComponent<Animator>().SetBool("DoorPressed", true);
         }
     }
 }
