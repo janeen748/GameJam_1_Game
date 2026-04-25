@@ -24,7 +24,7 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.CompareTag("Player")|| (other.CompareTag("MovableObj")))
+        if (other.CompareTag("Player")|| (other.CompareTag("Moveable")))
         {
             objectsOnTop++;
                 UpdateState();
@@ -37,7 +37,7 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player" )|| (other.CompareTag("MovableObj")) )
+        if (other.CompareTag("Player" )|| (other.CompareTag("MoveableObj")) )
         {
             objectsOnTop--;
             UpdateState();
@@ -62,4 +62,8 @@ public class PressurePlate : MonoBehaviour
             door.GetComponent<Animator>().SetTrigger("DoorClose");
         }
     }
+
+
+
+   
 }
