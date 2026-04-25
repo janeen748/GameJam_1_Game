@@ -82,7 +82,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         Vector3 rayPos = new Vector3(transform.position.x, transform.position.y - rayOffset, transform.position.z);
-        isGrounded = Physics2D.Raycast(rayPos, Vector2.down, rayDist, LayerMask.GetMask("Ground"));
+        isGrounded = Physics2D.Raycast(rayPos, Vector2.down, rayDist, LayerMask.GetMask("Ground")) || Physics2D.Raycast(rayPos, Vector2.down, rayDist, LayerMask.GetMask("MovableObjects"));
         Debug.DrawRay(rayPos, Vector2.down * rayDist, Color.red);
 
         if (isGrounded)
